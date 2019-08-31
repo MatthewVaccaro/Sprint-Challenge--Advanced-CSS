@@ -1,1 +1,19 @@
 // Mixins Here
+
+.button(@padding,@radius,@color,@size) {
+  padding: @padding;
+  border-radius: @radius;
+  background: @btn-bg-color;
+  color: @color;
+  text-align: center;
+  font-size: @size;
+
+  &:hover {
+    background: @shuttle-gray;
+  }
+}
+
+.flex(@flow) {
+  display: flex;
+  flex-flow: @flow;
+}
